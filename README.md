@@ -26,10 +26,12 @@ A simple and interactive expense tracker built with Streamlit. Track your daily 
    cd smart-expense-tracker-streamlit
 
 2. Install dependencies:
+   ```bash
     pip install streamlit pandas
 
-3. Run the app:
-    streamlit run app.py
+4. Run the app:
+   ```bash
+   streamlit run app.py
 
 
 ## Exporting Data

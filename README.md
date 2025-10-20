@@ -17,6 +17,10 @@ A simple and interactive expense tracker built with Streamlit. Track your daily 
 - Streamlit
 - Pandas
 
+### 🗣️ New Feature: Voice Assistant Support
+Now you can add expense descriptions using your voice!  
+Simply click the “🎤 Use Voice to Add Description” button and speak — the app will automatically recognize and fill your input.
+
 
 ## How to Run Locally
 

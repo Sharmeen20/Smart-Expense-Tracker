@@ -60,4 +60,28 @@ elif choice == "Export CSV":
             st.download_button("Download CSV", f, file_name=DATA_FILE)
     else:
         st.info("No data to export.")
+
+import streamlit as st
+import speech_recognition as sr
+
+def recognize_speech():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        st.info("🎤 Please speak now...")
+        audio = r.listen(source)
+        try:
+            text = r.recognize_google(audio)
+            st.success("You said: " + text)
+            return text
+        except sr.UnknownValueError:
+            st.error("Sorry, could not understand audio")
+            return ""
+        except sr.RequestError as e:
+            st.error(f"Could not request results; {e}")
+            return ""
+
+# Streamlit UI me button
+if st.button("🎤 Use Voice to Add Description"):
+    description = recognize_speech()
+    st.session_state["description"] = description
 ``

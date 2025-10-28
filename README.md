@@ -1,4 +1,4 @@
-# Smart Expense Tracker (Streamlit UI)
+# Smart Expense Tracker
 
 A simple and interactive expense tracker built with Streamlit. Track your daily expenses, categorize them, view summaries, and export your data — all from a clean web interface.
 
